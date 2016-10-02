@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-
+ruby '2.2.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,3 +51,5 @@ gem 'bootstrap-sass'
 gem 'devise', '~>4.0.0'
 gem 'searchkick', '~> 1.0.0'
 gem 'will_paginate', '~> 3.1.0'
+gem 'rails_12factor', group: :production
+gem 'pg', group: :production
