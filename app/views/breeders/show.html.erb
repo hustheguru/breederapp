@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @breeder.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @breeder.address %>
+</p>
+
+<p>
+  <strong>Suburb:</strong>
+  <%= @breeder.suburb %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @breeder.state %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @breeder.postcode %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @breeder.telephone %>
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @breeder.website %>
+</p>
+
+<%= link_to 'Edit', edit_breeder_path(@breeder) %> |
+<%= link_to 'Back', breeders_path %>
