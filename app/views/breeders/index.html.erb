@@ -1,7 +1,18 @@
-<p id="notice"><%= notice %></p>
+<div class="jumbotron">
+  <h2>We are the best pet breeder search tool in Australia.</h2><br/>
+  <h3>Find a dog or cat breeder by breed or location.</h3>
+</div>
 
-<h1>Breeders</h1>
+<h1>Find by breed or location</h1>
+<p>(e.g. Poodle, NSW, 2000)</p>
+    <%= form_tag search_breeders_path, method: :get, class: "form-group" do %>
+  <%= text_field_tag :search, params[:search], class: "form-control" %></br>
+    <%= submit_tag "Search", name: nil, class: "btn btn-primary" %>
+   <% end %>
 
+<div>
+<h3> All breeders </h3>
+</div>
 <table class="table table-striped">
   <thead>
     <tr>

@@ -1,9 +1,0 @@
-<div class="jumbotron">
-  We are the best pet breeder search tool in Australia.
-</div>
-<h1>Find by breed or location</h1>
-<p>(e.g. Poodle, NSW, 2000)</p>
-  <%= form_tag search_breeders_path, method: :get, class: "form-group" do %>
-   		<%= text_field_tag :search, params[:search], class: "form-control" %>
-   		<%= submit_tag "Search", name: nil, class: "btn btn-default" %>
-	    	  <% end %>
